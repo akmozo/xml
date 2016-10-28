@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<client>
+    <adresse>adresse</adresse>
+    <articles num="1">
+        <description>product 01</description>
+        <price>1</price>
+    </articles>
+    <articles num="1">
+        <description>product 02</description>
+        <price>1</price>
+    </articles>
+    <articles num="1">
+        <description>product 03</description>
+        <price>1</price>
+    </articles>
+    <nom>nom</nom>
+</client>

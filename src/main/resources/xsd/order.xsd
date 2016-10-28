@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xsd:schema 
+    version="1.0" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    
+    xmlns:p="http://www.akmozo.com/2016/Product" 
+    
+    xmlns:o="http://www.akmozo.com/2016/Order" 
+    targetNamespace="http://www.akmozo.com/2016/Order"
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"    
+>
+    
+    <xsd:import namespace="http://www.akmozo.com/2016/Product" schemaLocation="product.xsd"/>
+    
+    <xsd:element name="order" type="o:Order"/>
+    
+    <xsd:complexType name="Order">
+
+        <xsd:sequence> 
+            <xsd:element name="orderLine" type="o:OrderLine"  maxOccurs="2000" />
+        </xsd:sequence>
+        <xsd:attribute name="date" type="xsd:date"/>
+        
+    </xsd:complexType>    
+
+    <xsd:complexType name="OrderLine">
+        <xsd:complexContent>
+            <xsd:extension base="p:Product">
+                <xsd:sequence>
+                    <xsd:element name="quantity" type="xsd:positiveInteger"/>                    
+                    <xsd:element name="total" type="xsd:decimal"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+</xsd:schema>

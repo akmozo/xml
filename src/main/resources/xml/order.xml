@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<o:order
+
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+        
+    xmlns:o='http://www.akmozo.com/2016/Order'
+    xmlns:p='http://www.akmozo.com/2016/Product'
+    
+    xsi:schemaLocation='http://www.akmozo.com/2016/Order order.xsd 
+                        http://www.akmozo.com/2016/Product product.xsd' 
+    
+    date="2089-12-12">    
+    
+    <o:orderLine num="152">
+        <p:description>Aspirateur Moulinex - MNX85</p:description>
+        <p:price>78</p:price>
+        <o:quantity>10</o:quantity>     
+        <o:total>780</o:total>
+    </o:orderLine>    
+    <o:orderLine num="192">
+        <p:description>Four Samsung FS-1580</p:description>
+        <p:price>150</p:price>
+        <o:quantity>5</o:quantity>     
+        <o:total>750</o:total>
+    </o:orderLine>    
+
+</o:order>

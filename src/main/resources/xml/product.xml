@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:product
+    
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    xmlns:p='http://www.akmozo.com/2016/Product'
+    xsi:schemaLocation='http://www.akmozo.com/2016/Product  product.xsd' num="5963">
+    
+    <p:description>ceci est le description de produit</p:description>
+    <p:price>12563.58</p:price>
+
+</p:product>
